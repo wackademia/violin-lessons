@@ -217,7 +217,7 @@ async def get_schedule():
     schedule = await db.schedule.find({}, {"_id": 0}).to_list(50)
     return schedule
 
-@app.post("/api/schedule")
+@app.post("/api/schedule", status_code=201)
 async def create_schedule(entry: ScheduleCreate):
     entry_data = {
         "id": str(uuid.uuid4()),
