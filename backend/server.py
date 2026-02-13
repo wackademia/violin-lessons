@@ -127,7 +127,7 @@ async def get_practice_logs():
     logs = await db.practice_logs.find({}, {"_id": 0}).sort("date", -1).to_list(365)
     return logs
 
-@app.post("/api/practice-logs")
+@app.post("/api/practice-logs", status_code=201)
 async def create_practice_log(log: PracticeLogCreate):
     log_data = {
         "id": str(uuid.uuid4()),
