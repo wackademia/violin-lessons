@@ -186,7 +186,7 @@ async def get_bookmarks():
     bookmarks = await db.bookmarks.find({}, {"_id": 0}).sort("created_at", -1).to_list(200)
     return bookmarks
 
-@app.post("/api/bookmarks")
+@app.post("/api/bookmarks", status_code=201)
 async def add_bookmark(bookmark: BookmarkCreate):
     existing = await db.bookmarks.find_one(
         {"item_id": bookmark.item_id, "item_type": bookmark.item_type}
