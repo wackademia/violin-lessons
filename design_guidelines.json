@@ -1,0 +1,162 @@
+{
+  "identity": {
+    "name": "E1",
+    "persona": "The Anti-AI Designer",
+    "mission": "Create a premium, classical violin learning experience that feels like a private conservatory, not a generic SaaS.",
+    "aesthetic": "Dark Academia meets Modern Minimalist. Warm woods, deep shadows, and golden accents."
+  },
+  "theme": {
+    "mode": "dark",
+    "strategy": "Warm Dark (Espresso)",
+    "description": "A rich, immersive dark theme suitable for low-light practice sessions. Avoids pure black; uses deep warm greys and browns."
+  },
+  "typography": {
+    "headings": {
+      "family": "Playfair Display",
+      "weights": ["400", "600", "700"],
+      "usage": "All section titles, hero text, and major labels. Gives the classical feel.",
+      "letterSpacing": "-0.02em"
+    },
+    "body": {
+      "family": "Manrope",
+      "weights": ["300", "400", "500", "600"],
+      "usage": "UI elements, lesson text, settings, menus. Clean and readable.",
+      "letterSpacing": "normal"
+    },
+    "mono": {
+      "family": "JetBrains Mono",
+      "usage": "Tuner frequency display (Hz), technical data.",
+      "weights": ["400"]
+    }
+  },
+  "colors": {
+    "palette": {
+      "background": {
+        "DEFAULT": "#1C1917",
+        "secondary": "#292524",
+        "tertiary": "#44403C"
+      },
+      "primary": {
+        "DEFAULT": "#D97706",
+        "foreground": "#FFFFFF",
+        "hover": "#B45309"
+      },
+      "secondary": {
+        "DEFAULT": "#57534E",
+        "foreground": "#F5F5F4"
+      },
+      "accent": {
+        "DEFAULT": "#A3B18A",
+        "foreground": "#1C1917",
+        "gold": "#FCD34D"
+      },
+      "destructive": {
+        "DEFAULT": "#991B1B",
+        "foreground": "#FEF2F2"
+      },
+      "text": {
+        "primary": "#FAFAF9",
+        "secondary": "#A8A29E",
+        "muted": "#78716C"
+      },
+      "tuner": {
+        "in_tune": "#4ADE80",
+        "flat": "#FBBF24",
+        "sharp": "#F87171"
+      }
+    },
+    "gradients": {
+      "hero": "linear-gradient(to bottom right, #1C1917, #292524)",
+      "card_overlay": "linear-gradient(to top, rgba(28, 25, 23, 0.9), transparent)",
+      "gold_glow": "radial-gradient(circle at center, rgba(217, 119, 6, 0.3), transparent 70%)"
+    }
+  },
+  "spacing": {
+    "scale": "Generous",
+    "base_unit": "4px",
+    "container_padding": "p-6 md:p-12",
+    "section_gap": "gap-12 md:gap-24"
+  },
+  "layout": {
+    "grid_system": "Bento Grid for Dashboard",
+    "container": "max-w-7xl mx-auto",
+    "strategies": {
+      "dashboard": "Asymmetric grid. Hero stats (large), Next Lesson (medium), Tuner (small/quick access).",
+      "lesson_view": "Split screen. Video/Content on left (66%), Progress/Notes on right (33%).",
+      "sheet_music": "Full immersive view with floating controls."
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "rounded-full px-8 py-3 bg-primary text-white hover:bg-primary-hover transition-transform hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(217,119,6,0.2)]",
+      "secondary": "rounded-full px-6 py-3 border border-stone-600 hover:bg-stone-800 transition-colors",
+      "ghost": "text-stone-400 hover:text-primary transition-colors"
+    },
+    "cards": {
+      "style": "bg-stone-800/50 border border-stone-700/50 backdrop-blur-md rounded-2xl overflow-hidden hover:border-primary/50 transition-colors duration-300",
+      "hover": "hover:shadow-2xl hover:-translate-y-1"
+    },
+    "tuner_ui": {
+      "style": "Minimalist Analog Gauge. Needle moves smoothly. Central 'In Tune' zone glows Green. Background is deep matte black.",
+      "font": "JetBrains Mono for Hz display."
+    },
+    "sheet_music_viewer": {
+      "style": "Clean white/off-white paper texture on dark background. Controls fade out when not in use."
+    }
+  },
+  "motion": {
+    "transitions": {
+      "default": "all 0.4s cubic-bezier(0.22, 1, 0.36, 1)",
+      "page": "opacity 0.3s ease-in-out"
+    },
+    "micro_interactions": {
+      "hover": "scale-105",
+      "click": "scale-95",
+      "card_hover": "lift and glow"
+    }
+  },
+  "assets": {
+    "images": [
+      {
+        "category": "hero",
+        "url": "https://images.unsplash.com/photo-1577923873566-c65cea4b859f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHw0fHx2aW9saW4lMjBwbGF5ZXIlMjBjbG9zZXVwJTIwc3RyaW5ncyUyMGJyaWRnZSUyMHBlcmZvcm1hbmNlfGVufDB8fHx8MTc3MDk5NTUzN3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Close up of violin bridge and strings, warm wood tones",
+        "usage": "Dashboard Hero Background, Welcome Screen"
+      },
+      {
+        "category": "lesson_thumbnails",
+        "url": "https://images.unsplash.com/photo-1566913485314-2246e21e3234?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHx2aW9saW4lMjBwbGF5ZXIlMjBjbG9zZXVwJTIwc3RyaW5ncyUyMGJyaWRnZSUyMHBlcmZvcm1hbmNlfGVufDB8fHx8MTc3MDk5NTUzN3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Man playing violin in profile",
+        "usage": "Lesson cards, Technique section"
+      },
+      {
+        "category": "library_cover",
+        "url": "https://images.unsplash.com/photo-1625101651795-83733364de6d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHwzfHxjbGFzc2ljYWwlMjBjb21wb3NlciUyMHBvcnRyYWl0JTIwc3RhdHVlJTIwYnVzdCUyMGJhY2glMjBtb3phcnQlMjBiZWV0aG92ZW58ZW58MHx8fHwxNzcwOTk1NTM5fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Classical statue/bust",
+        "usage": "Sheet Music Library Header, Composers section"
+      }
+    ],
+    "icons": {
+      "library": "lucide-react",
+      "style": "Stroke width 1.5px (thin and elegant)",
+      "usage": "Navigation, actions, status indicators"
+    }
+  },
+  "instructions_to_main_agent": [
+    "INSTALL: npm install @fontsource/playfair-display @fontsource/manrope lucide-react framer-motion clsx tailwind-merge",
+    "SETUP: Add the Google Fonts imports in main.jsx or index.css.",
+    "COMPONENT_OVERRIDE: Do NOT use default Shadcn cards. Use the custom 'glass-dark' style defined in colors/cards above.",
+    "TUNER: Implement the Violin Tuner using the Web Audio API (navigator.mediaDevices.getUserMedia). The UI should be a canvas or SVG gauge. DO NOT use a library if possible, or use a very lightweight one. It must detect pitch.",
+    "SHEET_MUSIC: For the MVP, use a simple Image/PDF viewer or a mock render for 'Twinkle Twinkle'. Do not overengineer a VexFlow implementation unless confident.",
+    "ROUTING: Use react-router-dom. Create a Layout component with a Sidebar (Desktop) / Bottom Nav (Mobile).",
+    "STATE: Use localStorage for saving progress (completed lessons, practice streak). No backend auth required as per constraints.",
+    "ACCESSIBILITY: Ensure all text meets contrast ratios against the dark background. Use aria-labels for the Tuner."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Do NOT apply universal transition: all. Use specific transitions.",
+    "Do NOT center align the app container.",
+    "Use sonner for toasts.",
+    "All interactive elements MUST have data-testid attributes.",
+    "Maintain the Dark Warm aesthetic strictly. No cold blues or cyans unless absolutely necessary for a specific indicator."
+  ]
+}
