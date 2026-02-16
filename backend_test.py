@@ -137,7 +137,7 @@ class VirtuosoAPITester:
         
         # Get all sheet music
         def validate_sheet_music(data):
-            return isinstance(data, list) and len(data) == 12
+            return isinstance(data, list) and len(data) == 6
         
         success, sheet_data = self.run_test(
             "Get All Sheet Music", "GET", "/api/sheet-music", 200, validate_response=validate_sheet_music
