@@ -183,7 +183,7 @@ class VirtuosoAPITester:
             
             def validate_care_detail(data):
                 return (data.get('id') == first_guide_id and 
-                       'content' in data and isinstance(data['content'], list))
+                       'content' in data and isinstance(data['content'], str))
             
             self.run_test(
                 f"Get Care Guide Detail ({first_guide_id})", "GET", f"/api/care-guides/{first_guide_id}", 
