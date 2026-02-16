@@ -124,7 +124,7 @@ class VirtuosoAPITester:
             
             def validate_theory_detail(data):
                 return (data.get('id') == first_topic_id and 
-                       'content' in data and isinstance(data['content'], list))
+                       'content' in data and isinstance(data['content'], str))
             
             self.run_test(
                 f"Get Theory Topic Detail ({first_topic_id})", "GET", f"/api/theory/{first_topic_id}", 
