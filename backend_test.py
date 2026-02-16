@@ -158,7 +158,7 @@ class VirtuosoAPITester:
             
             def validate_sheet_detail(data):
                 return (data.get('id') == first_piece_id and 
-                       'notes' in data and 'composer' in data)
+                       'notation' in data and 'composer' in data)
             
             self.run_test(
                 f"Get Sheet Music Detail ({first_piece_id})", "GET", f"/api/sheet-music/{first_piece_id}", 
