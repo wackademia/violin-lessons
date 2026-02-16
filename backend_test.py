@@ -98,8 +98,8 @@ class VirtuosoAPITester:
             
             def validate_lesson_detail(data):
                 return (data.get('id') == first_lesson_id and 
-                       'content' in data and isinstance(data['content'], list) and
-                       'youtube_id' in data)
+                       'content' in data and isinstance(data['content'], str) and
+                       'video_url' in data)
             
             self.run_test(
                 f"Get Lesson Detail ({first_lesson_id})", "GET", f"/api/lessons/{first_lesson_id}", 
