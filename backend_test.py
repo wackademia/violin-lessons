@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 
 class VirtuosoAPITester:
     def __init__(self):
-        self.base_url = "https://131f1459-9b96-467c-b28d-f74aef841d88.preview.emergentagent.com"
+        self.base_url = "https://codebase-review-68.preview.emergentagent.com"
         self.tests_run = 0
         self.tests_passed = 0
         self.failed_tests = []
